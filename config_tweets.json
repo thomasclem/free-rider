@@ -1,0 +1,7 @@
+{
+    "search":{
+        "query" : "follow retweet giveaway -RT -is:retweet",
+        "max_result" : 100,
+        "last_time_search" : "08/09/2022 19:33"
+    }
+}
