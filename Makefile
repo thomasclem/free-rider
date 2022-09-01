@@ -1,4 +1,5 @@
-
+.PHONY: install activate init
+.DEFAULT_GOAL := help
 
 # PROJECT SETUP COMMANDS
 install: requirements.txt  ## install project dependencies (requirements.txt)
@@ -16,3 +17,4 @@ activate: ## initiate virtual environment
 init: ## initiate virtual environment
 	bash init.sh
 	touch init
+

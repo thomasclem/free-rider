@@ -8,18 +8,20 @@ class tweepyClientConfig():
             CRED = json.load(f)
 
     def __init__(self, cred = CRED):
-        self.__dict__ = cred
+        self.__dict__ = cred["accounts"][0]
 
 
 class tweepyClient(tweepyClientConfig):
 
     def __init__(self):
         super().__init__()
-        self.client = tweepy.Client(bearer_token = self.bearer_token,
+        self.client = tweepy.Client(
+                            bearer_token = self.bearer_token,
                             consumer_key = self.api_key,
                             consumer_secret = self.api_key_secret,
                             access_token = self.access_token,
-                            access_token_secret = self.access_token_secret)
+                            access_token_secret = self.access_token_secret
+                            )
     
 
 client = tweepyClient().client

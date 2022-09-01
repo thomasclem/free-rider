@@ -3,5 +3,21 @@
         "query" : "follow retweet giveaway -RT -is:retweet",
         "max_result" : 100,
         "last_time_search" : "08/09/2022 19:33"
-    }
+    },
+    "contest_validation": {
+        "tweet_condition": {
+            "retweet_count" : 20,
+            "reply_count" : 10,
+            "like_count" : 20,
+            "quote_count" : 0
+        },
+        "author_condition": {
+            "followers_count" : 2000
+        }
+    },
+    "account_posting":{
+            "theme" : "Deep learning"
+        }
 }
+
+
